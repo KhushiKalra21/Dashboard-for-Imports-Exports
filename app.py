@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load the dataset
-df = pd.read_csv("C:\\Users\\khush\\OneDrive\\Desktop\\random_sample.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/KhushiKalra21/Dashboard-of-Import-Export/main/Random_Sample.csv")
 
 # Create labels for charts if needed
 df['Label'] = df['Product'] + ': ' + df['Country']
