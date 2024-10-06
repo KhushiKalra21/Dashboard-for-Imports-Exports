@@ -42,10 +42,10 @@ elif chart_dropdown == 'Port vs Shipping Method':
 
 # Bubble Chart: Quantity vs Value of Trade Transactions
 elif chart_dropdown == 'Bubble Chart':
-    st.title('Quantity vs Value of Trade Transactions')
-    fig = px.scatter(df, x='Quantity', y='Value', size='Value', color='Payment_Terms',
-                     hover_name='Payment_Terms', title='Quantity vs Value of Trade Transactions',
-                     labels={'Quantity': 'Trade Quantity', 'Value': 'Trade Value'})
+    st.title('Quantity and Payment Method Trade Transactions')
+    fig = px.scatter(df, x='Quantity', y='Payment_Terms', size='Payment_Terms', color='Payment_Terms',
+                     hover_name='Payment_Terms', title='Quantity  of Trade Transactions',
+                     labels={'Quantity': 'Trade Quantity', 'Payment_Terms': 'Payment Method'})
     st.plotly_chart(fig)
 
 # Vertical Bar Chart: Trade Volume by Port (with Shipping Method Differentiation)
